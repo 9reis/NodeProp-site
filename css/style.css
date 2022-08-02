@@ -29,15 +29,37 @@ img{
     max-width: 100%;
 }
 
+
+/************************************************************************\
+                                CONTAINER
+\************************************************************************/
+
+.container{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+
+/************************************************************************\
+                                BG COLOR
+\************************************************************************/
+
+.bg-gradiente{
+    background: linear-gradient(to right,#ce2e3c, #da6709 );
+}
+
+.bg-black{
+    background: #000;
+}
+
+.bg-white{
+    background: #FFF;
+}
+
 /************************************************************************\
                                 CABECALHO
 \************************************************************************/
-
-.cabecalho{
-    width: 100%;
-    float:left;
-    padding: 3% 4%;
-}
 
 .logo{
     width: 56px;
@@ -55,7 +77,7 @@ img{
     color: #FFF;
     border-radius: 56px;
     cursor:pointer;
-    background: linear-gradient(to right,#ce2e3c, #da6709 ); 
+     
 }
 
 /************************************************************************\
@@ -105,10 +127,6 @@ img{
 \************************************************************************/
 
 .banner {
-    width: 100%;
-    float: left;
-    text-align: center;
-    padding: 3% 4%;
     background: url(../img/bg.jpg)no-repeat fixed;
 }
 
@@ -136,24 +154,16 @@ img{
     float: right;
 }
 
-.btn-cadastras{
+.btn {
     width: 100%;
     font-size: 1.5em;
     text-align: left;
     cursor: pointer;
     padding: 5%;
     border-radius: 10px;
-    background: #FFF;
 }
 
 .btn-sobre{
-    width: 100%;
-    font-size: 1.5em;
-    text-align: left;
-    cursor: pointer;
-    padding: 5%;
-    border-radius: 10px;
-    background: #000;
     color: #FFF;
     margin-top: 3%;
 }
@@ -162,15 +172,8 @@ img{
                                 SERVICOS
 \************************************************************************/
 
-.servicos{
-    width: 100%;
-    float: left;
-    padding: 3% 4%;
-}
-
 .servico{
     width: 100%;
-    background: #FFF;
     text-align: left;
     border-radius: 7px;
     margin-bottom: 3%; 
@@ -202,16 +205,8 @@ img{
 }
 
 /************************************************************************\
-                                SERVICOS
+                                NEWSLETTER
 \************************************************************************/
-
-.newsletter{
-    width: 100%;
-    float: left;
-    text-align: center;
-    padding: 3% 4%;
-    background: #000;
-}
 
 .newsletter h2 {
     font-size: 1.5em;
@@ -229,7 +224,6 @@ img{
 
 .newsletter input{
     width: 100%;
-    background: #000;
     color: #FFF;
     border: 1px solid #FFF;
     padding: 3%;
@@ -238,7 +232,6 @@ img{
 
 .newsletter button{
     width: 100%;
-    background: #FFF;
     padding: 5%;
     border-radius: 5px;
     margin-top: 3%;
@@ -250,14 +243,6 @@ img{
 /************************************************************************\
                                 RODAPE
 \************************************************************************/
-
- .rodape{
-    width: 100%;
-    float: left;
-    padding: 3% 4%;
-    text-align: center;
-    background: linear-gradient(to right,#ce2e3c, #da6709 ); 
- }
 
  .social-icons a{
     font-size:1.5em;
@@ -276,3 +261,169 @@ img{
     margin-top: 2%;
     color: rgba(255, 255, 255, 0.7);
 }
+
+
+/************************************************************************\
+                               RESPONSIVIDADE 
+\************************************************************************/
+
+/*********************************************\
+            SMALL DEVICES - SMARTPHONES
+\*********************************************/
+
+@media screen and (min-width:480px){
+    .logo{
+        width: 214px;
+        background: url(../img/logo.png) center center/214px no-repeat;
+        float:left;
+        font-size: 0; 
+    }
+
+    .btn{
+        font-size: 2em;
+    }
+}
+
+/*********************************************\
+            SMALL DEVICES - TABLETS
+\*********************************************/
+
+@media screen and (min-width:768px){
+    .servico {
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+    }
+    .servico h4{
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .servico p{
+        font-size: 1.2em;
+    }
+
+    .servico:nth-child(2){
+        margin-right: 0;
+    }
+
+    .newsletter h2{
+        font-size: 2em;
+    }
+    .newsletter h3{
+        font-size: 1.5em;
+    }
+
+    .newsletter input{
+        width: 70%;
+        padding: 2%;
+        float: left;
+        margin-right:1%;
+        font-size: 1.2em;
+    }
+
+    .newsletter button{
+        width: 28%;
+        float: right;
+        padding: 2%;
+        font-size: 1.2em;
+        margin-top: 0;
+    }
+
+}
+
+/*********************************************\
+        MEDIUM DEVICES - TABLETS & DESKTOPS
+\*********************************************/
+@media screen and (min-width:960px){
+ 
+ .title{
+    width: 70%;
+    float: left;
+    text-align: left;
+ }
+
+ .title h2{
+    font-size: 3em;
+ }
+
+ .title h3 {
+    font-size: 2em;
+ }
+
+ .buttons{
+    width: 30%;
+    float: right;
+    margin-top: 0;
+ }
+
+ .servico{
+    width: 32%;
+ }
+
+ .servico:nth-child(2){
+    margin-right: 2%;
+}
+
+.servico:nth-child(3){
+    margin-right: 0;
+}
+
+.newsletter input{
+    width: 60%;
+    float: none;
+    font-size: 1.3em;
+}
+
+.newsletter button{
+    width: 20%;
+    float: none;
+    font-size: 1.3em;
+}
+
+}
+    
+/*********************************************\
+        LARGE DEVICES - WIDE SCREEN
+\*********************************************/
+@media screen and (min-width:1280px){
+
+    /* body{
+        background: blue;
+     } */
+    
+   .btn-menu{
+    display: none;
+   }
+
+   .btn-close{
+    display: none;
+   }
+
+   .menu{
+    width: auto;
+    height: 56px;
+    line-height: 56px;
+    float: right;
+    background: #F5F5F5;
+    display: block !important;
+    position: static;
+   }
+
+   .menu li{
+    padding: 0;
+    float: left;
+   }
+
+   .menu li a{
+    color: #130400;
+    font-size: 1.5em;
+    padding: 15px;
+   }
+
+   .menu li a:hover{
+    border: none;
+    font-weight: 600;
+    border-bottom: 2px solid #da6709;
+   }
+}
+       
