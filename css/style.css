@@ -73,12 +73,13 @@ img{
 } 
 
 .btn-close{
-     font-size: 3em;
+     font-size: 1.5em;
      color: #FFF;
      float:right;
      cursor: pointer;
-     margin-right: 5%;
+     margin: 6% 8% 0 0;
 }
+
 .menu ul {
     width: 100%;
     float:left;
@@ -157,5 +158,46 @@ img{
     margin-top: 3%;
 }
 
+/************************************************************************\
+                                SERVICOS
+\************************************************************************/
 
+.servicos{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
 
+}
+
+.servico{
+    width: 100%;
+    background: #FFF;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 3%; 
+}
+
+.servico img{
+    border-radius:7px 7px 0 0;
+}
+
+.inner{
+    padding: 7%;
+}
+
+.inner a{
+    font-size: 1.5em; 
+    color: #000;
+    font-weight: 700;
+}
+
+.inner h4{
+    font-size: 1.2em;
+    color: #130400;
+    margin-top: 2% ;
+}
+
+.inner p{
+    margin-top: 6%;
+    line-height: 1.5em;
+}
