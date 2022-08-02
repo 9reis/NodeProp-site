@@ -166,7 +166,6 @@ img{
     width: 100%;
     float: left;
     padding: 3% 4%;
-
 }
 
 .servico{
@@ -200,4 +199,50 @@ img{
 .inner p{
     margin-top: 6%;
     line-height: 1.5em;
+}
+
+/************************************************************************\
+                                SERVICOS
+\************************************************************************/
+
+.newsletter{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3% 4%;
+    background: #000;
+}
+
+.newsletter h2 {
+    font-size: 1.5em;
+    color: #FFF;
+    font-weight: 700 ;
+}
+
+.newsletter h3{
+    color: #FFF;
+}
+
+.newsletter form {
+    margin-top: 2%;
+}
+
+.newsletter input{
+    width: 100%;
+    background: #000;
+    color: #FFF;
+    border: 1px solid #FFF;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+.newsletter button{
+    width: 100%;
+    background: #FFF;
+    padding: 5%;
+    border-radius: 5px;
+    margin-top: 3%;
+    font-size: 1.3em;
+    font-weight: 500;
+    cursor: pointer;
 }
